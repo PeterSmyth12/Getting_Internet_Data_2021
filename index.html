@@ -1328,8 +1328,8 @@ df_movies_some_cols <span class="token operator">=</span> pd<span class="token p
 <span class="token comment"># and</span>
 
 <span class="token keyword">print</span><span class="token punctuation">(</span>df_movies<span class="token punctuation">.</span>genres<span class="token punctuation">)</span>
-</pre><p>If we are interested in more than one column, the 2nd method above cannot be used. However in the first, although we used a string with the value of &apos;genres&apos; we could also have provided a list of strings. Remember that lists are enclosed in [].</p>
-<p>print(df_movies<a href="&apos;title&apos;,_&apos;genres&apos;.md">&apos;title&apos;, &apos;genres&apos;</a>)</p>
+</pre><p>If we are interested in more than one column, the 2nd method above cannot be used. However in the first, although we used a string with the value of &apos;genres&apos; we could also have provided a list of strings. Remember that lists are enclosed in []. So we end up with &apos;[&apos; within &apos;[&apos;.</p>
+<p><code>print(df_movies[[&apos;title&apos;, &apos;genres&apos;]])</code></p>
 <blockquote>
 <h3>Exercise</h3>
 </blockquote>
@@ -1452,12 +1452,12 @@ df_movies<span class="token punctuation">.</span>head<span class="token punctuat
 <p>In this session we will be looking at various way of downloading data from the Internet.</p>
 <p>Not all methods require the use of coding in Python or any other programming language. But having downloaded data it is likely that you will want to process it in some way.</p>
 <p>When downloading data, quite apart from finding out where the data is available from (not covered here) you need to be aware of the data format that it may arrive in. CSV may be the most popular, but it is not the only one, and you need to be prepared to work with whatever format you are given.</p>
-<p>We will start with the simplest methods of getting data from the Internet and work our way up to the more complex collection techniques and various data formats. We will only e scratching the surface in many cases.</p>
+<p>We will start with the simplest methods of getting data from the Internet and work our way up to the more complex collection techniques and various data formats. We will only be scratching the surface in many cases.</p>
 <p>This is the order of play:</p>
 <ol>
 <li>Copy/Paste into both Excel and a Python dataframe</li>
 <li>Single files in various formats (csv/txt, JSON, HTML) using Python</li>
-<li>Multiple csv files using Python</li>
+<li>Multiple csv files using Python, combining them in Excel</li>
 <li>JSON data from an API using Python</li>
 <li>Web page (HTML) scraping using Python</li>
 </ol>
@@ -1468,7 +1468,7 @@ df_movies<span class="token punctuation">.</span>head<span class="token punctuat
 <p><a href="notebooks\Dictionaries.ipynb">Dictionaries.ipynb</a></p>
 <p><a href="notebooks\Football.ipynb">Football.ipynb</a></p>
 <p><a href="notebooks\BBC.ipynb">BBC.ipynb</a></p>
-<p>When we look at APIs we will a file for further processing. If you do not have a Football API key, you can download this file from the following link:</p>
+<p>When we look at APIs we will create a file for further processing. If you do not have a Football API key, you can download this file from the following link:</p>
 <p><a href="data\results_fullset.csv">results_fullset.csv</a></p>
 
       </div>
