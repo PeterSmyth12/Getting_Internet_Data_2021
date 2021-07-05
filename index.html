@@ -261,11 +261,11 @@ pre[data-line] .line-highlight[data-end]:after {
     </head>
     <body for="html-export">
       <div class="mume markdown-preview  ">
-      <h1>Python Essentials</h1>
+      <h1>Getting Data from the Internet with Python</h1>
 <blockquote>A one day workshop provided by the <strong>Cathie Marsh Institute (CMI)</strong> at the University of Manchester on 6/7th July 2021</blockquote>
 <h2>Workshop outline</h2>
 <p>This workshop is split into two afternoon sessions. The first will cover Pyjon basics and on the second afternoon we will look at using our Python skills to extract useful data from the Internet.<br>
-You will not leave the workshop as Python programmers. The aim is to give you the confidence to write your own Python code to solve simple data analysis tasks by possibly adapting the small sections of code that we will use develp during the workshop. Specifically to be able to decide and implement basic methods for downloading data from the Internet using Python.</p>
+You will not leave the workshop as Python programmers. The aim is to give you the confidence to write your own Python code to solve simple data analysis tasks by possibly adapting the small sections of code that we will use develop during the workshop. Specifically to be able to decide and implement basic methods for downloading data from the Internet using Python.</p>
 <p>The workshop is broken up into three sections.</p>
 <ol>
 <li>
@@ -342,7 +342,7 @@ You will not leave the workshop as Python programmers. The aim is to give you th
 <h2>REPL</h2>
 <p><strong>REPL</strong> is an acronym which stands for Read, Evaluate, Print and Loop.</p>
 <p>REPL allows you to write single statements of code, have them executed, and if there are any results to show, they are displayed and then the interpreter loops back to the beginning and waits for the next program statement.</p>
-<p><img src="./media/media/image1.png" alt="Python_Repl"></p>
+<p><img src="./media/image1.png" alt="Python_Repl"></p>
 <p>In the example above, two variables a and b have been created, assigned to values 2 and 3, and then multiplied together.</p>
 <p>Every time you press Return, the line is interpreted. The assignment<br>
 statements don&apos;t produce any output so you get only the standard<br>
@@ -352,16 +352,16 @@ statements don&apos;t produce any output so you get only the standard<br>
 <p>You are not restricted to single line statements. If the Python interpreter decides that what you have written on a line cannot be a complete statement it will give you a continuation prompt of ... until you complete the statement.</p>
 <h2>Introducing Jupyter notebooks</h2>
 <p><a href="http://jupyter.org/"><strong>Jupyter</strong></a> originates from IPython, an effort to make Python development more interactive. Since its inception, the scope of the project has expanded to include <strong>Ju</strong>lia, <strong>Pyt</strong>hon, and <strong>R</strong>, so the name was changed to &quot;Jupyter&quot; as a reference to these core languages. Today, Jupyter supports even more languages, but we will be using it only for Python code. Specifically, we will be using <strong>Jupyter notebooks</strong>, which allows us to easily take notes about our analysis and view plots within the same document where we code. This facilitates sharing and reproducibility of analyses, and the notebook interface is easily accessible through any web browser. Jupyter notebooks are started from the terminal using</p>
-<pre data-role="codeBlock" data-info class="language-"><code>\$ jupyter notebook
+<pre data-role="codeBlock" data-info class="language-"><code>\$ jupyter lab
 </code></pre><p>Your browser should start automatically and look something like this:</p>
-<p><img src="./media/media/image2.png" alt="Jupyter_notebook_list"></p>
+<p><img src="./media/image2.png" alt="Jupyter_notebook_list"></p>
 <p>When you create a notebook from the <em>New</em> option, the new notebook will be displayed in a new browser tab and look like this.</p>
-<p><img src="./media/media/image3.png" alt="Jupyter_notebook"></p>
+<p><img src="./media/image3.png" alt="Jupyter_notebook"></p>
 <p>Initially the notebook has no name other than &apos;Untitled&apos;. If you click on &apos;Untitled&apos; you will be given the option of changing the name to whatever you want.</p>
 <p>The notebook is divided into <strong>cells</strong>. Initially there will be a single input cell marked by <code>In [ ]:</code>.</p>
 <p>You can type Python code directly into the cell. You can split the code across several lines as needed. Unlike the REPL we looked at before, the code is not interpreted line by line. To interpret the code in a cell, you can click the <em>Run</em> button in the toolbar or from the <em>Cell</em> menu option, or use keyboard shortcuts (e.g., Shift+Return). All of the code in that cell will then be executed.</p>
 <p>The results are shown in a separate Out [1]: cell immediately below. A new input cell <code>In [ ]:</code> is created for you automatically.</p>
-<p><img src="./media/media/image4.png" alt="Jupyter_notebook_cell"></p>
+<p><img src="./media/image4.png" alt="Jupyter_notebook_cell"></p>
 <p>When a cell is run, it is given a number along with the corresponding output cell. If you have a notebook with many cells in it you can run the cells in any order and also run the same cell many times. The number on the left hand side of the input cells increments, so you can always tell the order in which they were run. For example, a cell marked <code>In [5]:</code> was the fifth cell run in the sequence.</p>
 <p>Although there is an option to do so on the toolbar, you do not have to manually save the notebook. This is done automatically by the Jupyter system.</p>
 <p>Not only are the contents of the <code>In [ ]:</code> cells saved, but so are the <code>Out [ ]:</code> cells. This allows you to create complete documents with both your code and the output of the code in a single place. You can also change the cell type from Python code to Markdown using the <em>Cell &gt; Cell Type</em> option.<br>
@@ -390,7 +390,7 @@ statements don&apos;t produce any output so you get only the standard<br>
 <p>When you run cells of code the output is displayed immediately below the cell. In general this is convenient. The output is associated with the cell that produced it and remains a part of the notebook. So if you copy or move the notebook the output stays with the code.</p>
 <p>However lots of output can make the notebook look cluttered and more difficult to move around. So there is an option available from the cell menu item to &apos;toggle&apos; or &apos;clear&apos; the output associated either with an individual cell or all cells in the notebook.</p>
 <h2>Creating variables and assigning values</h2>
-<p><strong>The Notebook for this section can be found</strong> <a href="scripts\Python_Essentials_basics.ipynb">here</a></p>
+<p><strong>The Notebook for this section can be found</strong> <a href="notebooks\Python_Essentials_basics.ipynb">here</a></p>
 <h3 class="mume-header" id="variables-and-types">Variables and Types</h3>
 
 <p>Comparison with Excel : see <a href="Digression_variables.docx">Digression_Variables.docx</a></p>
@@ -432,7 +432,6 @@ the <a href="https://docs.python.org/3/library/datatypes.html">Python documentat
 <p>In the last expression a is multiplied by 2 and then the modulus of the result is taken. Had I wanted to calculate a % b and then multiply the result by two I could have done so by using brackets to make the order of calculation clear.</p>
 <p>Arithmetic expressions can be arbitrarily complex, but remember people have to read and understand them as well.</p>
 <p>A complete set of Python operators can be found in the <a href="https://docs.python.org/3.5/library/operator.html">official documentation</a>. The documentation may appear a bit confusing as it initially talks about operators as functions whereas we generally use them as &apos;in place&apos; operators. Section 10.3.1 provides a table which list all of the available operators, not all of which are relevant to basic arithmetic.</p>
-
 <h2>Using built-in functions</h2>
 <p>Python has a reasonable number of built-in functions. You can find a complete list in the <a href="https://docs.python.org/3/library/functions.html">official documentation</a>.</p>
 <p>Additional functions are provided by 3rd party packages which we will look at later on.</p>
@@ -447,7 +446,7 @@ the <a href="https://docs.python.org/3/library/datatypes.html">Python documentat
 <h3>Solution</h3>
 </blockquote>
 <p>Type &apos;print&apos; into a code cell and then type shift+tab. The following pop-up should appear.</p>
-<p><img src="./media/media/image5.png" alt="Print parameter information"></p>
+<p><img src="./media/image5.png" alt="Print parameter information"></p>
 </details>
 <h2>Getting Help for Python</h2>
 <p>You can get help on any Python function by using the help function. It takes a single parameter of the function name for which you want the help</p>
@@ -1086,7 +1085,7 @@ dog
 <details><summary><b>Solution</b>  - click me</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python">items_owned <span class="token operator">=</span> <span class="token string">&quot;bicycle;television;solar_panel;table&quot;</span>
 
-<span class="token keyword">for</span> item <span class="token keyword">in</span> items_owned<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">&quot;,&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">:</span>
+<span class="token keyword">for</span> item <span class="token keyword">in</span> items_owned<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">&quot;;&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">:</span>
     <span class="token keyword">print</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span>
 </pre></details>
 <br>
@@ -1217,14 +1216,14 @@ volume<span class="token punctuation">,</span> surface_area<span class="token pu
 <p>For the rest of this workshop we will be using a dataset derived from the Movielens opensource datasets (<a href="https://movielens.org/">https://movielens.org/</a>). It is the one we downloaded at the beginning of the workshop. Our dataset provides viewers ratings of nearly 3000 movies from a variety of genres.</p>
 <p>Initially we will use the dataset to demonstrate the pandas package. We will then use it to create some simple graphics</p>
 <h2>What is Pandas?</h2>
-<p><strong>The Notebook for this section can be found</strong> <a href="scripts\Python_Essentials_basics_pandas.ipynb">here</a></p>
+<p><strong>The Notebook for this section can be found</strong> <a href="notebooks\Python_Essentials_basics_pandas.ipynb">here</a></p>
 <p>pandas is a Python library containing a set of functions and specialised data structures that have been designed to help Python programmers to perform data analysis tasks in a structured way.</p>
 <p>Most of the things that pandas can do can be done with basic Python, but the collected set of pandas functions and data structure makes the data analysis tasks more consistent in terms of syntax and therefore aids readabilty.</p>
-<p>Particular features of pandas that we will be looking at over this and the next couple of episodes include:</p>
+<p>Particular features of pandas include the list below. We will be looking at those in bold in this workshop.</p>
 <ul>
 <li>
-<p>Reading data stored in CSV files (other file formats can be read as<br>
-well)</p>
+<p><strong>Reading data stored in CSV files (other file formats can be read as<br>
+well)</strong></p>
 </li>
 <li>
 <p><strong>Slicing and subsetting data in Dataframes (tables!)</strong></p>
@@ -1259,7 +1258,7 @@ split-apply-combine paradigm</strong></p>
 <pre data-role="codeBlock" data-info="python" class="language-python">input_file <span class="token operator">=</span> <span class="token string">&apos;../data/movie_ratings_summary.csv&apos;</span>
 
 df_movies <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span>input_file<span class="token punctuation">,</span> sep<span class="token operator">=</span><span class="token string">&apos;,&apos;</span><span class="token punctuation">)</span>
-</pre><p>It is usual to put the name (and path) of the dataset into a string variable first and then pas the variable to the read_csv method. The second parameter indicates how the data items are separated, &#x2018;,&#x2019; is in fact the default for read_csv so we could have omitted it. However having it as a parameter makes the method more flexible. We can still use read_csv to read tab delimited file (sep = &apos;\t&apos;) or &#x2018;csv&#x2019; files from European sources where they use &#x2018;;&#x2019; instead of &#x2018;,&#x2019;.</p>
+</pre><p>It is usual to put the name (and path) of the dataset into a string variable first and then pass the variable to the read_csv method. The second parameter indicates how the data items are separated, &#x2018;,&#x2019; is in fact the default for read_csv so we could have omitted it. However having it as a parameter makes the method more flexible. We can still use read_csv to read tab delimited file (sep = &apos;\t&apos;) or &#x2018;csv&#x2019; files from European sources where they use &#x2018;;&#x2019; instead of &#x2018;,&#x2019;.</p>
 <blockquote>
 <h3>Exercise</h3>
 </blockquote>
@@ -1278,7 +1277,7 @@ df_movies <span class="token operator">=</span> pd<span class="token punctuation
 </pre><p>You can see the first few rows of the dataframe by using;</p>
 <pre data-role="codeBlock" data-info="python" class="language-python">df_movies<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span>
 </pre><p>The column names have been taken from the first record of the file. On the left hand side is a column with no name. The entries here have been provided by pandas and act as an index to reference the individual rows of the Dataframe. Most of the time we won&#x2019;t need to use this index.</p>
-<p>The read_csv() function has an index_col parameter which you can use to indicate which of the columns in the file you wish to use as the index instead. Although the movies dataset does have a column which would uniquely identify each row; Title, we don&#x2019;t need to specify it at this point.</p>
+<p>The <code>read_csv()</code> function has an <code>index_col</code> parameter which you can use to indicate which of the columns in the file you wish to use as the index instead. Although the movies dataset does have a column which would uniquely identify each row; Title, we don&#x2019;t need to specify it at this point.</p>
 <blockquote>
 <h3>Exercise</h3>
 </blockquote>
@@ -1446,8 +1445,31 @@ df_movies<span class="token punctuation">.</span>head<span class="token punctuat
 </pre><p>A variety of graphing examples are provided in the Data Carpentry for Social Science course at this url: <a href="https://datacarpentry.org/python-socialsci/13-matplotlib/index.html">https://datacarpentry.org/python-socialsci/13-matplotlib/index.html</a></p>
 <p>For this workshop we will create some examples barcharts using the Movielens data set that we have been using.</p>
 <p>The code for these examples are contained in the files;</p>
-<p><a href="scripts\Python_Essentials_movielens.ipynb">Python_Essentials_movielens.ipynb</a> and</p>
-<p><a href="scripts\Python_Essentials_movielens2.ipynb">Python_Essentials_movielens2.ipynb</a></p>
+<p><a href="notebooks\Python_Essentials_movielens.ipynb">Python_Essentials_movielens.ipynb</a> and</p>
+<p><a href="notebooks\Python_Essentials_movielens2.ipynb">Python_Essentials_movielens2.ipynb</a></p>
+<h1 class="mume-header" id="day-2">Day 2</h1>
+
+<p>In this session we will be looking at various way of downloading data from the Internet.</p>
+<p>Not all methods require the use of coding in Python or any other programming language. But having downloaded data it is likely that you will want to process it in some way.</p>
+<p>When downloading data, quite apart from finding out where the data is available from (not covered here) you need to be aware of the data format that it may arrive in. CSV may be the most popular, but it is not the only one, and you need to be prepared to work with whatever format you are given.</p>
+<p>We will start with the simplest methods of getting data from the Internet and work our way up to the more complex collection techniques and various data formats. We will only e scratching the surface in many cases.</p>
+<p>This is the order of play:</p>
+<ol>
+<li>Copy/Paste into both Excel and a Python dataframe</li>
+<li>Single files in various formats (csv/txt, JSON, HTML) using Python</li>
+<li>Multiple csv files using Python</li>
+<li>JSON data from an API using Python</li>
+<li>Web page (HTML) scraping using Python</li>
+</ol>
+<p>For each of these sections we will use individual Jupyter Notebooks. These can be downloaded from the links below.</p>
+<p><a href="notebooks\Clipboard.ipynb">Clipboard.ipynb</a></p>
+<p><a href="notebooks\Simple_File_requests.ipynb">Simple_File_requests.ipynb</a></p>
+<p><a href="notebooks\covid.ipynb">covid.ipynb</a></p>
+<p><a href="notebooks\Dictionaries.ipynb">Dictionaries.ipynb</a></p>
+<p><a href="notebooks\Football.ipynb">Football.ipynb</a></p>
+<p><a href="notebooks\BBC.ipynb">BBC.ipynb</a></p>
+<p>When we look at APIs we will a file for further processing. If you do not have a Football API key, you can download this file from the following link:</p>
+<p><a href="data\results_fullset.csv">results_fullset.csv</a></p>
 
       </div>
       
